@@ -6,10 +6,14 @@ contínua a cor de pequenas áreas que você escolhe na tela e, quando uma delas
 como um sinalizador que fica vermelho ou um campo que muda de cor, envia uma mensagem de texto
 para o seu celular.
 
-Por trás dessa ideia simples existe um princípio que molda toda a implementação: **ler cores, não
-tirar fotos**. O Vigia nunca captura o monitor inteiro, nunca grava uma imagem em disco e nunca
-envia uma imagem para lugar nenhum. Ele lê apenas os pixels das regiões que você configurou e
-deixa sair do processo somente números, como a cor lida, a cobertura e o nome do estado.
+Por trás dessa ideia simples existe uma necessidade bem concreta: **monitorar continuamente um
+sistema com acesso limitado à rede externa** sem que alguém precise ficar o tempo todo de olho na
+tela. Como esse sistema não consegue, por conta própria, avisar ninguém do lado de fora, o Vigia
+resolve o problema de fora: observa a tela no seu lugar e manda o aviso para o celular só quando
+algo de fato muda, sem se comportar como um gravador de tela nesse ambiente. O Vigia nunca captura
+o monitor inteiro, nunca grava uma imagem em disco e nunca envia uma imagem para lugar nenhum. Ele
+lê apenas os pixels das regiões que você configurou e deixa sair do processo somente números, como
+a cor lida, a cobertura e o nome do estado.
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
